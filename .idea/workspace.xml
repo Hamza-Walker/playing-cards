@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7c2f84e-287f-4876-95e9-cb79f56c6b77" name="Changes" comment="project setup" />
+    <list default="true" id="a7c2f84e-287f-4876-95e9-cb79f56c6b77" name="Changes" comment="project setup">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/model/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/model/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/model/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/model/Symbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/model/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/model/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/model/Symbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/model/Symbol.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +58,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -66,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686046668710</updated>
-      <workItem from="1686046669841" duration="3860000" />
+      <workItem from="1686046669841" duration="7090000" />
     </task>
     <task id="LOCAL-00001" summary="lsdvkndlsv">
       <created>1686046976583</created>
