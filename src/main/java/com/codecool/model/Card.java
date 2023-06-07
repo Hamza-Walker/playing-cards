@@ -25,12 +25,12 @@ public class Card {
         return title;
     }
 
-    public Card (Symbol symbol, Suit suit) {
+    public Card(Symbol symbol, Suit suit) {
         this.symbol = symbol;
         this.suit = suit;
         this.title = createTitle();
-
     }
+
     public Symbol getSymbol() {
         return symbol;
     }
@@ -38,11 +38,12 @@ public class Card {
     public Suit getSuit() {
         return suit;
     }
+
     public String getTitle() {
         return title;
     }
-    private String createTitle(){
+
+    private String createTitle() {
         return this.symbol + " of " + this.suit;
     }
-
 }
