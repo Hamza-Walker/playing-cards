@@ -1,38 +1,52 @@
 package com.codecool;
+
 import com.codecool.Data.GenerateCards;
 import com.codecool.model.Card;
+import com.codecool.model.Deck;
 import com.codecool.model.Suit;
 import com.codecool.model.Symbol;
 
 import java.util.ArrayList;
+import java.util.Optional;
 import java.util.Scanner;
 
 public class Application {
 
     public static void main(String[] args) {
-        Card card1 = new Card(Symbol.ACE, Suit.SPADES);
-        Card card2 = new Card(Symbol.ACE, Suit.SPADES);
+        // Create a deck of cards
+        GenerateCards generateCards = new GenerateCards();
+        ArrayList<Card> deck = GenerateCards.getDeck();
 
-        //  It is still possible to change the fields of the objects after they have been created,
-        //  because they have been implemented with a public setter method.
+        // Create a deck instance
+        Deck gameDeck = new Deck(deck);
 
-        System.out.println(card1);
-        System.out.println(card1.equals(card2));
+        // Create a scanner for user input
+        Scanner scanner = new Scanner(System.in);
 
-        // Scanner scanner = new Scanner(System.in);
-        // scanner.nextLine();
-        // We can add the Scanner to stop the debugger from
-        // immediately exiting after the execution.
-        // Instead, it will wait for hitting Enter to exit.
+        // Prompt the user to draw a card
+        System.out.println("Would you like to draw a card? (Y/N):");
+        String input = scanner.nextLine();
 
-        // printing the deck
-        GenerateCards generateCards = new GenerateCards(); // Create an instance of GenerateCards
-        ArrayList<Card> deck = GenerateCards.getDeck(); // Obtain the deck of cards
+        while (input.equalsIgnoreCase("Y")) {
+            // Draw a card
+            Optional<Card> drawnCard = gameDeck.drawOne();
 
-        for (Card card: deck) {
-            System.out.println(card.getTitle());
+            if (drawnCard.isPresent()) {
+                // Card successfully drawn
+                Card card = drawnCard.get();
+                System.out.println("You drew: " + card.getTitle());
+                System.out.println("Number of cards remaining: " + gameDeck.getCardCount());
+            } else {
+                // No more cards in the deck
+                System.out.println("No more cards in the deck!");
+                break;
+            }
+
+            // Prompt the user to draw another card
+            System.out.println("Would you like to draw another card? (Y/N):");
+            input = scanner.nextLine();
         }
 
+        System.out.println("Thank you for playing!");
     }
 }
-
