@@ -7,7 +7,7 @@ import com.codecool.model.Symbol;
 import java.util.ArrayList;
 
 public class GenerateCards {
-    private static ArrayList<Card> deck = new ArrayList<>();
+    private final static ArrayList<Card> deck = new ArrayList<>();
 
     public GenerateCards() {
         generateNumberedCards();

@@ -3,8 +3,7 @@ package com.codecool;
 import com.codecool.Data.GenerateCards;
 import com.codecool.model.Card;
 import com.codecool.model.Deck;
-import com.codecool.model.Suit;
-import com.codecool.model.Symbol;
+
 
 import java.util.ArrayList;
 import java.util.Optional;
@@ -42,7 +41,7 @@ public class Application {
                 break;
             }
 
-            // Prompt the user to draw another card
+            // Pyrompt the user to draw another card
             System.out.println("Would you like to draw another card? (Y/N):");
             input = scanner.nextLine();
         }
